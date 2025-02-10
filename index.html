@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        //ASSESSMENT-11
+        //Approach
+        // var str1 = ["mom", "js", "dad", "malayalam", "html", "css"];
+        // var str2 = [];
+        
+        // for (let i = 0; i < str1.length; i++) {   
+        //    let is_palindrome = true;
+           
+        //    for (let j = 0; j < str1[i].length / 2; j++) { 
+        //      if (str1[i][j] != str1[i][str1[i].length - j - 1]) {
+        //         is_palindrome = false;
+        //         break;
+        //      }
+        //    }
+        
+        //    if (is_palindrome) {
+        //       str2.push(str1[i]);
+        //    }
+        // }
+        
+        // console.log(str2);
+        
+        //Approach-2
+        //FOR LOOP
+        // var str1 = ["mom", "js", "dad", "malayalam", "html", "css"];
+        // var str2 = [];
+        // for(i=0;i < str1.length;i++)
+        // {
+        //    var a=str1[i];
+        //    var b="";
+        //    for(j=a.length-1; j>=0; j--)
+        //    {
+        //       b+=a[j];
+        //    }
+        //    if(b == a)
+        //    {
+        //       str2.push(a);
+        //    }
+        // }
+        // console.log(str2);
+        
+        //Approach-3
+        //WHILE LOOP
+        // var str1 = ["mom", "js", "dad", "malayalam", "html", "css"];
+        // var str2 = [];
+        // flag=true;
+        // while(flag)
+        // {
+        //    for(i=0;i< str1.length;i++)
+        //    {
+        //       var a=str1[i];
+        //       var b="";
+        //       for(j=a.length-1; j>=0; j--)
+        //       {
+        //          b+=a[j];
+        //       }
+        //       if(b == a)
+        //       {
+        //          str2.push(a);
+        //       }
+        //    }
+        //    flag=false;
+        // }
+        // if(flag==true)
+        // {
+        
+        // }else{
+        // console.log(str2);
+        // }
+        
+        //Approach-4
+        //DO-WHILE
+        var str1 = ["mom", "js", "dad", "malayalam", "html", "css"];
+        var str2 = [];
+        flag=false;
+        do{
+           
+              for(i=0;i< str1.length;i++)
+              {
+                 var a=str1[i];
+                 var b="";
+                 for(j=a.length-1; j>=0; j--)
+                 {
+                    b+=a[j];
+                 }
+                 if(b == a)
+                 {
+                    str2.push(a);
+                 }
+              }
+           console.log(str2)
+        } while(flag);
+    </pre>
+</body>
+</html>
